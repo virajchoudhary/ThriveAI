@@ -54,20 +54,22 @@ Before running the application, ensure you have the following installed on your 
 1. **Clone the Repository**
 
    Open your terminal or command prompt and run:
-   ```bash
+   ```
    git clone https://github.com/virajchoudhary/ThriveAI.git
    cd ThriveAI
-2. Set Up a Virtual Environment (Optional but Recommended)
+2. **Set Up a Virtual Environment (Optional but Recommended)**
+   ```
    python -m venv venv
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
+   On Linux/macOS:
+   source venv/bin/activate
+   On Windows:
+   venv\Scripts\activate
 
-3. Install Dependencies
+3. **Install Dependencies**
+   ```
    pip install -r requirements.txt
 
-Configuration
+## Configuration
 
 Since ThriveAI runs offline using a pre-trained generative model, no external API keys are required. However, ensure that your environment is set up correctly:
 
@@ -75,7 +77,7 @@ Since ThriveAI runs offline using a pre-trained generative model, no external AP
 
     Review the requirements.txt file for a complete list of dependencies.
 
-Usage
+## Usage
 
     Run the Application Locally
     python app.py
@@ -84,7 +86,8 @@ Usage
     Open your web browser and navigate to: http://localhost:5000
 
 The application will start a Flask server that hosts the ThriveAI chat interface, allowing users to interact with the chatbot.
-Dependencies
+
+## Dependencies
 
 ThriveAI relies on the following Python libraries:
 
@@ -99,7 +102,7 @@ ThriveAI relies on the following Python libraries:
 Install all dependencies via:
 pip install -r requirements.txt
 
-Error Handling
+## Error Handling
 
 The application includes basic error handling for:
 
@@ -109,7 +112,7 @@ The application includes basic error handling for:
 
     Critical Input Detection: If the input contains crisis keywords, an immediate helpline message is returned to ensure user safety.
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you would like to help improve ThriveAI:
 
@@ -122,13 +125,17 @@ Contributions are welcome! If you would like to help improve ThriveAI:
     Push your branch and create a pull request.
 
 Please follow the code style and guidelines provided in the repository.
-License
+
+
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 © 2024 Viraj Choudhary
-Example Output
 
+
+## Example Output
+```
 User Input: "I'm feeling really anxious today."
 AI Response:
 "Based on what you've shared, it sounds like you're experiencing anxiety. Remember, it's okay to feel this way. It might help to practice some breathing exercises or consider talking to a trusted friend or professional. Your feelings are valid."
