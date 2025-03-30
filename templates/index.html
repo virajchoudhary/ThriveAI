@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ThriveAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ThriveAI</div>
+            <div class="disclaimer">Always remember: You matter.</div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-window" id="chatWindow"></div>
+            
+            <div class="input-container">
+                <textarea class="message-input" id="userInput" placeholder="Type your message"></textarea>
+                <button class="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

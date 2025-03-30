@@ -1,0 +1,121 @@
+:root {
+    --user-bg: #6366f1;
+    --ai-bg: #334155;
+    --critical-bg: #dc2626;
+    --background: #0f172a;
+    --surface: #1e293b;
+}
+
+body {
+    background: var(--background);
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6366f1;
+}
+
+.disclaimer {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.chat-container {
+    background: var(--surface);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-window {
+    height: 60vh;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #334155;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    resize: vertical;
+    min-height: 40px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background: #6366f1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.message {
+    margin: 10px 0;
+    display: flex;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.ai-message {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 15px;
+    margin: 8px 0;
+    word-break: break-word;
+    white-space: pre-line;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.user-message .message-bubble {
+    background: var(--user-bg);
+    border-radius: 15px 15px 0 15px;
+    margin-left: auto;
+}
+
+.ai-message .message-bubble {
+    background: var(--ai-bg);
+    border-radius: 15px 15px 15px 0;
+    margin-right: auto;
+}
+
+
+.message-bubble[data-priority="critical"] {
+    background: var(--critical-bg);
+}
